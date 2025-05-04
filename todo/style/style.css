@@ -1,13 +1,124 @@
-ul{
+ul {
     list-style-type: none;
 }
 
-span{
-    color: red;
-    cursor: pointer;
-   /*  border: 1px solid red; */
+ul li {
+    color: blue;
+    font-size: 20px;
+    font-weight: 600;
 }
 
-#list li:first-child{
-    margin-top: 30px; 
-} 
+.counter p {
+    text-align: center;
+}
+
+.counter p:last-child{
+    margin-bottom: 50px;
+}
+
+.counter .counter-schet {
+    color: red;
+}
+
+.counter .counter-schet1{
+    color: green;
+}
+
+span {
+    color: rgba(255, 0, 0, 0.545);
+    cursor: pointer;
+    /* border: 1px solid red; */
+    margin-left: 50px;
+    float: right;
+    font-weight: 700;
+    font-size: 18px;
+}
+
+span:hover{
+    color: red;
+}
+
+#list li:first-child {
+    margin-top: 30px;
+}
+
+#list li {
+    cursor: pointer;
+}
+
+.done {
+    text-decoration: line-through;
+    color: green;
+}
+
+.info-dev {
+    text-align: center;
+    margin: 20px 0 40px 0;
+}
+
+.info-dev button {
+    padding: 8px 40px;
+    font-size: 16px;
+    background: #0d6efd;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.info-dev button:hover {
+    background: #0b5ed7;
+    border-color: #0a58ca;
+}
+
+.info-dev button:focus {
+    color: #fff;
+    background-color: #0b5ed7;
+    border-color: #0a58ca;
+    box-shadow: 0 0 0 .25rem rgba(49, 132, 253, .5);
+}
+
+
+.popup {
+    display: none;
+    position: fixed;
+    z-index: 10;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.popup-content {
+    background: #fff;
+    margin: 140px auto;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+    max-width: 350px;
+    position: relative;
+}
+
+.popup .popup-content p {
+    font-size: 18px;
+    color: #333;
+    margin: 20px 0;
+}
+
+.popup .popup-content .close-btn {
+    position: absolute;
+    right: 10px;
+    top: -5px;
+    font-size: 24px;
+    color: #555;
+    cursor: pointer;
+    transition: color 0.2s;
+}
+
+.popup .popup-content .close-btn:hover {
+    color: #ff4d4d;
+}
+
+

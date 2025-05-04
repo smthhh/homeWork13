@@ -13,8 +13,26 @@
 <body>
     <h1 class="text-center">To-Do application</h1>
 
+    <div class="info-dev">
+        <button id="open">Информация о разработчике</button>
+    </div>
+
+
+    <div class="counter">
+        <p>Активные задачи: <b class="counter-schet" id="active">0</b></p>
+        <p>Выполненные задачи: <b class="counter-schet1"  id="done">0</b></p>
+    </div>
+
+
+    <div class="popup" id="modal">
+        <div class="popup-content">
+            <b class="close-btn" id="close">x</b>
+            <p>Дубицкий Максим Александрович</p>
+        </div>
+    </div>
+
     <div class="container">
-        <div class="row g-3"> 
+        <div class="row g-3">
             <div class="col-8">
                 <input type="text" class="form-control" id="inputTask" placeholder="Input task">
             </div>
@@ -22,12 +40,8 @@
         </div>
 
         <ul class="row g-3" id="list">
-            <li>Task1 <span>Delete</span></li>
-            <li>Task2 <span>Delete</span></li>
-            <li>Task3 <span>Delete</span></li>
-           
         </ul>
- 
+
     </div>
 
     <script src="./script/script.js"></script>
