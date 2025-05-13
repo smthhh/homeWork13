@@ -5,10 +5,10 @@ const spanItems = document.getElementsByTagName('span');
 
 function createTask() {
     let inputValue = inputTask.value.trim();
-    if (inputTask.value === '') {
+    if (inputValue === '') {
         return;
     } else {
-        inputTask.value = "";
+        inputTask.value = '';
     }
 
     let newLi = document.createElement('li');// <li></li>  
